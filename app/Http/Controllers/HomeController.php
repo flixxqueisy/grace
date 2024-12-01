@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,19 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if(Auth::user()->hasRole('Administrator')){
+            return view('dash.dashboard');
+        }
+        elseif(Auth::user()->hasRole('Supplier')){
+            return view('dash.supplierdash');
+        }
+        elseif(Auth::user()->hasRole('Retailer')){
+            return view('dash.supplierdash');
+        }
+        else
+        {
+            return view('dash.farmerdash');
+        }
+
     }
 }

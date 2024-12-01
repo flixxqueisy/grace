@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Color Admin | Login v3</title>
+    <title>Blockchain Fertilizer Verifier | Login</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
     <meta content name="description" />
     <meta content name="author" />
@@ -21,10 +21,9 @@
             <div class="news-feed">
                 <div class="news-image" style="background-image: url({{ asset('assets/img/login-bg/login-bg-11.jpg')}})"></div>
                 <div class="news-caption">
-                    <h4 class="caption-title"><b>Color</b> Admin App</h4>
+                    <h4 class="caption-title"><b>Blockchain </b> Fertilizer Verifier</h4>
                     <p>
-                        Download the Color Admin app for iPhone®, iPad®, and Android™. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
+                        A Using Blockchain Technology to Combat Counterfeit Fertiliser
                     </p>
                 </div>
             </div>
@@ -36,9 +35,9 @@
                     <div class="brand">
                         <div class="d-flex align-items-center">
                             <span class="logo"></span>
-                            <b>Color</b> Admin
+                            <b>Blockchain</b> Fertilizer
                         </div>
-                        <small>Bootstrap 5 Responsive Admin Template</small>
+                        <small>Your trusted Fertilizer Verifier</small>
                     </div>
                     <div class="icon">
                         <i class="fa fa-sign-in-alt"></i>
@@ -90,7 +89,7 @@
                         </div>
                         <hr class="bg-gray-600 opacity-2" />
                         <div class="text-gray-600 text-center  mb-0">
-                            &copy; Color Admin All Right Reserved 2024
+                            Otuya Grace Nyangayi &copy; 2024. All Rights Reserved
                         </div>
                     </form>
                 </div>

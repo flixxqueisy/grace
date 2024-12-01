@@ -1,7 +1,7 @@
 <div id="header" class="app-header">
 
     <div class="navbar-header">
-        <a href="index-2.html" class="navbar-brand"><span class="navbar-logo"></span> <b class="me-3px">Color</b> Admin</a>
+        <a href="index-2.html" class="navbar-brand"><span class="navbar-logo"></span> <b class="me-3px">Blockchain </b> Fertilizer Verifier</a>
         <button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>

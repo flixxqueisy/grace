@@ -58,7 +58,7 @@
             <div class="menu-header">Navigation</div>
 
             <div class="menu-item ">
-                <a href="bootstrap_5.html" class="menu-link">
+                <a href="{{ url('/home') }}" class="menu-link">
                     <div class="menu-icon-img">
                         <i class="fa fa-sitemap"></i>
                     </div>
@@ -66,6 +66,7 @@
                 </a>
             </div>
 
+            @if (Auth::user()->hasRole('Administrator'))
             <div class="menu-item has-sub">
                 <a href="javascript:;" class="menu-link">
                     <div class="menu-icon">
@@ -76,21 +77,21 @@
                 </a>
                 <div class="menu-submenu">
                     <div class="menu-item">
-                        <a href="index-2.html" class="menu-link">
+                        <a href={{ url('/users/create', []) }} class="menu-link">
                             <div class="menu-text">Add New User</div>
                         </a>
                     </div>
                     <div class="menu-item">
-                        <a href="index_v2.html" class="menu-link">
+                        <a href={{ url('/users', []) }} class="menu-link">
                             <div class="menu-text">View Users</div>
                         </a>
                     </div>
 
                 </div>
             </div>
+            @endif
 
-
-
+            @if (Auth::user()->hasRole('Supplier'))
             <div class="menu-item has-sub">
                 <a href="javascript:;" class="menu-link">
                     <div class="menu-icon">
@@ -116,64 +117,11 @@
                                     <div class="menu-text">Default</div>
                                 </a>
                             </div>
-                            <div class="menu-item">
-                                <a href="table_manage_buttons.html" class="menu-link">
-                                    <div class="menu-text">Buttons</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_colreorder.html" class="menu-link">
-                                    <div class="menu-text">ColReorder</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_fixed_columns.html" class="menu-link">
-                                    <div class="menu-text">Fixed Column</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_fixed_header.html" class="menu-link">
-                                    <div class="menu-text">Fixed Header</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_keytable.html" class="menu-link">
-                                    <div class="menu-text">KeyTable</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_responsive.html" class="menu-link">
-                                    <div class="menu-text">Responsive</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_rowreorder.html" class="menu-link">
-                                    <div class="menu-text">RowReorder</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_scroller.html" class="menu-link">
-                                    <div class="menu-text">Scroller</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_select.html" class="menu-link">
-                                    <div class="menu-text">Select</div>
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <a href="table_manage_combine.html" class="menu-link">
-                                    <div class="menu-text">Extension Combination</div>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
+            @endif
 
 
 
@@ -193,5 +141,7 @@
 
 </div>
 <div class="app-sidebar-bg" data-bs-theme="dark"></div>
-<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile"
-        class="stretched-link"></a></div>
+
+<div class="app-sidebar-mobile-backdrop">
+    <a href="#" data-dismiss="app-sidebar-mobile" class="stretched-link"></a>
+</div>
